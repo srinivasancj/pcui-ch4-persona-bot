@@ -30,6 +30,6 @@ app.get('/', function (req, res) {
 
 
 app.post('/emc2/', function (req, res) {
-    console.log(req);
+    console.log(req.body);
 })
 
