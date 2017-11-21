@@ -1,6 +1,7 @@
 
 
 // EinsteinBot webhooks
+// Author : Srini Janarthanam
 
 const express = require('express')
 const bodyParser = require('body-parser')
@@ -44,7 +45,7 @@ app.post('/emc2/', function (req, res) {
     res.setHeader('Content-Type', 'application/json');
     
     var botSpeech = "Energy that the system can create is " + e 
-    + "Joules.";
+    + " Joules.";
     
     out = {speech: botSpeech,
             displayText: botSpeech,
